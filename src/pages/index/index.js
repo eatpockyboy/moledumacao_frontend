@@ -5,7 +5,7 @@
  */
 
 import { createApp } from "vue";
-import App from "./pages/app.vue";
+import App from "./views/app.vue";
 import { createPinia } from 'pinia'
 import router from "./route";
 

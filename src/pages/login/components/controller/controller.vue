@@ -1,6 +1,6 @@
 <template>
 <div class="controller">
-    <button @click="jumpToLogin">{{store.name}}</button>
+    <button @click="jumpToIndex">{{store.name}}</button>
 </div>
 </template>
 <script src="./controller.js"></script>
