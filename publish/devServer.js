@@ -9,7 +9,7 @@ const views = config.views;
 const compiler = Webpack(webpackConfig);
 
 const server = new WebpackDevServer({
-    ...config.devOption
+    ...config.devOption,
 }, compiler);
 
 const runServer = async () => {

@@ -4,7 +4,9 @@ const json5 = require('json5');
 const { VueLoaderPlugin } = require('vue-loader');
 const WebpackTools = require("./WebpackTools");
 const config = require("./config");
-
+const AutoImport = require('unplugin-auto-import/webpack')
+const Components = require('unplugin-vue-components/webpack')
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 const webpackTools = new WebpackTools(config);
 // console.log(path.resolve(__dirname, "../src"), 'jijiji');
 
@@ -47,6 +49,13 @@ module.exports = Object.assign({
                 ],
             },
             {
+                test: /\.css$/,
+                use: [
+                    'style-loader', // 将 JS 字符串生成为 style 节点
+                    'css-loader',   // 将 CSS 转化成 CommonJS 模块
+                ],
+            },
+            {
                 test: /\.(png|svg|jpg|gif|jpeg|ttf|woff|woff2|eot)$/i,
                 type: 'asset/resource',
                 generator: {
@@ -56,6 +65,13 @@ module.exports = Object.assign({
             {
                 test: /\.template$/i,
                 use: [ "html-loader" ]
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader'
+                }
             }
         ]
     },
@@ -69,7 +85,13 @@ module.exports = Object.assign({
     },
     plugins: [
         ...webpackTools.html.map(item => new HtmlWebpackPlugin(item)),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        AutoImport({
+        resolvers: [ElementPlusResolver()],
+        }),
+        Components({
+        resolvers: [ElementPlusResolver()],
+        }),
     ]
 }, config.isDebug && {
     devtool: 'inline-source-map'
