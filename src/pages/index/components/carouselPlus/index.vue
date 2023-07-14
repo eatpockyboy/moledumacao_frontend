@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2023-07-06 02:07:41
  * @LastEditors: Chris
- * @LastEditTime: 2023-07-06 05:35:27
+ * @LastEditTime: 2023-07-15 01:33:14
  * @Descripttion: **
 -->
 <template>
@@ -19,7 +19,7 @@
       <div class="swiper-item-content">
         <div class="swiper-left">
           <div
-            class="s-component-content s-font-title"
+            class="s-component-content swiper-left-title"
             style="white-space: pre-wrap"
           >
             <h2>
@@ -31,7 +31,7 @@
             </h2>
           </div>
           <div
-            class="s-component-content s-font-heading"
+            class="s-component-content swiper-left-heading"
             style="white-space: pre-wrap"
           >
             <h4>
@@ -44,7 +44,7 @@
               </p>
             </h4>
           </div>
-          <div class="s-component-content css-owv3vc">
+          <div class="s-component-content  swiper-left-link">
             <a
               class="s-common-button css-chf7i2 s-font-button small"
               id="custom-btn"
@@ -169,6 +169,13 @@ export default {
   // background: hsla(0, 0%, 100%, 0.25);
 }
 
+a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgb(204, 204, 204);
+  color: #000;
+}
+
 .swiper-pagination-bullet-active {
   color: #fff;
   // background: hsla(0, 0%, 100%, 0.8);
@@ -181,6 +188,14 @@ export default {
   padding: 0 20px;
   .swiper-left {
     width: 50%;
+    text-align: center;
+
+    .swiper-left-title {
+      padding-bottom: 16px;
+    }
+    .swiper-left-heading {
+      padding-bottom: 32px;
+    }
     // flex: 1;
     // flex-shrink: 0;
     // flex-grow: 1;
@@ -188,12 +203,17 @@ export default {
   .swiper-right {
     // height: 100%;
     width: 50%;
+    text-align: center;
     // display: flex;
     // justify-content: center;
     // align-items: center;
     // flex: 1;
     // flex-shrink: 0;
     // flex-grow: 1;
+    .swiper-img {
+      max-width: 84%;
+      // aspect-ratio: 500 / 660;
+    }
   }
 }
 </style>

@@ -97,6 +97,9 @@ h1 {
   font-weight: 700;
   margin-bottom: 20px;
 }
+h2 {
+  font-size: 36px;
+}
 h4 {
   font-size: 18px;
   font-weight: 400;
@@ -123,6 +126,7 @@ h4 {
  .main-container {
   width: 76%;
  }
+
 }
 
 @media screen and (max-width: 899px) {
@@ -145,4 +149,8 @@ h4 {
  .header {
   display: block;
  }
+ .progress-list {
+  width: unset !important;
+ }
+
 }
