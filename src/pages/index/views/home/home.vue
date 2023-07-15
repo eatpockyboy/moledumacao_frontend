@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2023-06-30 01:05:16
  * @LastEditors: Chris
- * @LastEditTime: 2023-07-15 18:08:06
+ * @LastEditTime: 2023-07-15 18:13:36
  * @Descripttion: **
 -->
 <template>
@@ -355,7 +355,7 @@ h2 {
   padding: 0 40px;
   margin-bottom: 75px;
 
-  text-align: center;
+  // text-align: center;
 
   a {
     font-size: 18px;
@@ -378,7 +378,9 @@ h2 {
     color: rgb(204, 204, 204);
     padding: 4px 0 8px;
   }
-
+  .more-article {
+    text-align: center;
+  }
   .more-article-btn {
     padding: 10px 20px;
     background-color: rgb(204, 204, 204);
