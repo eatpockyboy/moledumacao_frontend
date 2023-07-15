@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2023-07-06 02:07:41
  * @LastEditors: Chris
- * @LastEditTime: 2023-07-15 01:33:14
+ * @LastEditTime: 2023-07-15 18:00:58
  * @Descripttion: **
 -->
 <template>
@@ -69,15 +69,19 @@
       <div class="swiper-item-content">
         <div class="swiper-left">
           <div
-            class="s-component-content s-font-title"
+            class="s-component-content swiper-left-title"
             style="white-space: pre-wrap"
           >
             <h2>
-              <p><strong>Edy Sir 北京大學雙學士</strong></p>
+              <p style="font-size: 80%">
+                <span class="s-text-color-black"
+                  ><strong>dy Sir 北京大學雙學士</strong></span
+                >
+              </p>
             </h2>
           </div>
           <div
-            class="s-component-content s-font-heading"
+            class="s-component-content swiper-left-heading"
             style="white-space: pre-wrap"
           >
             <h4>
@@ -88,7 +92,7 @@
               </p>
             </h4>
           </div>
-          <div class="s-component-content css-owv3vc">
+          <div class="s-component-content swiper-left-link">
             <a
               class="s-common-button css-chf7i2 s-font-button small"
               id="custom-btn"

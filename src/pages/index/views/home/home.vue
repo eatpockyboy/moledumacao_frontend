@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2023-06-30 01:05:16
  * @LastEditors: Chris
- * @LastEditTime: 2023-07-15 02:39:37
+ * @LastEditTime: 2023-07-15 18:08:06
  * @Descripttion: **
 -->
 <template>
@@ -326,7 +326,7 @@ const a = ref(0);
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: 400;
   color: #1D2023;
   font-family: work sans, helvetica, "Lisong Pro", "PMingLiU", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", STXihei, sans-serif;
@@ -343,7 +343,9 @@ h2 {
   //   color: #1D2023;
   //   font-family: work sans, helvetica, "Lisong Pro", "PMingLiU", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", STXihei, sans-serif;
   // }
-
+  h2 {
+    margin-bottom: 20px;
+  }
   h4 {
     color: #ef7f4f;
   }
@@ -360,9 +362,9 @@ h2 {
     text-decoration: none;
   }
 
-  h2 {
-    margin-bottom: 40px;
-  }
+  // h2 {
+  //   margin-bottom: 40px;
+  // }
 
   .detail-info {
     text-align: left;
