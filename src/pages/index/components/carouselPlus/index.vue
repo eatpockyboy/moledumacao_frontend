@@ -58,68 +58,10 @@
           </div>
         </div>
         <div class="swiper-right">
-          <img
-            class="swiper-img"
-            src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1276149/1318072234368_1318072234368_r_ykuvbm.jpg"
-          />
+          <div class="swiper-img img1"></div>
         </div>
       </div>
     </swiper-slide>
-    <swiper-slide>
-      <div class="swiper-item-content">
-        <div class="swiper-left">
-          <div
-            class="s-component-content swiper-left-title"
-            style="white-space: pre-wrap"
-          >
-            <h2>
-              <p style="font-size: 80%">
-                <span class="s-text-color-black"
-                  ><strong>dy Sir 北京大學雙學士</strong></span
-                >
-              </p>
-            </h2>
-          </div>
-          <div
-            class="s-component-content swiper-left-heading"
-            style="white-space: pre-wrap"
-          >
-            <h4>
-              <p>
-                <span class="s-text-color-gray"
-                  ><strong>奧林匹克化學、數學培訓導師</strong></span
-                >
-              </p>
-            </h4>
-          </div>
-          <div class="s-component-content swiper-left-link">
-            <a
-              class="s-common-button css-chf7i2 s-font-button small"
-              id="custom-btn"
-              href="https://m.me/moledu.macao/"
-              data-is-nav-btn="false"
-              data-type="Web"
-              data-component="button"
-              target="_blank"
-              >立刻了解</a
-            >
-          </div>
-        </div>
-        <div class="swiper-right">
-          <img
-            class="swiper-img"
-            src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1276149/PKU_zkq4ly.png"
-          />
-        </div>
-      </div>
-    </swiper-slide>
-    <!-- <swiper-slide>
-      <img class="swiper-img" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/1276149/City_Buildings_Facebook_Cover_OK_bbnbhc.jpg" />
-    </swiper-slide> -->
-    <!-- <swiper-slide>
-      <img class="swiper-img" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/1276149/City_Buildings_Facebook_Cover_2_ojxc2q.png" />
-    </swiper-slide> -->
-    <!-- <swiper-slide>Slide 4</swiper-slide> -->
   </swiper>
 </template>
 <script>
@@ -185,7 +127,7 @@ a {
   // background: hsla(0, 0%, 100%, 0.8);
 }
 .swiper-item-content {
-  height: 746px;
+  height: 500px;
   display: flex;
   align-items: center;
   // padding: 80px 20px;
@@ -216,6 +158,13 @@ a {
     // flex-grow: 1;
     .swiper-img {
       max-width: 84%;
+      height: 500px;
+      &.img1 {
+        background: url("@/asset/images/home/1318072234368_1318072234368_r_ykuvbm.jpg") no-repeat center center /contain;
+      }
+      &.img2 {
+        background: url("@/asset/images/home/PKU_zkq4ly.png") no-repeat center center /contain;
+      }
       // aspect-ratio: 500 / 660;
     }
   }

@@ -6,12 +6,10 @@
  * @Descripttion: **
  */
 import { createRouter, createWebHashHistory } from "vue-router";
-import main from "./views/main/main.vue";
 import home from "./views/home/home.vue";
 
 const routes = [
-    { path: '/', component: main, name: "main" },
-    { path: '/home', component: home, name: "home" }
+    { path: '/', component: home, name: "home" }
 ];
 
 const router = createRouter({

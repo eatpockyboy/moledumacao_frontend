@@ -1,9 +1,9 @@
 
 module.exports = {
-    TITLE: "test system",
+    TITLE: "澳門摩爾教育-澳門名校補習專家",
     PATH_ROOT: "../src/pages",
     HTML_TEMP_PATH: "../src/core/temp/temp.html",
-    pages: ["index", "login"],
+    pages: ["index"],
     isDebug: true,
     devOption: {
         port: 9552,

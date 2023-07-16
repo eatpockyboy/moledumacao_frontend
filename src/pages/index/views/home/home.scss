@@ -1,18 +1,204 @@
-//  .s-navbar-desktop {
-//   background: #ef7f4f;
-//   display: -webkit-box;
-//   display: -webkit-flex;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-align-items: center;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-//   position: fixed;
-//   padding: 40px;
-//   z-index: 210;
-//   height: 100%;
-//   box-shadow: 1px 0 rgba(0, 0, 0, 0.12);
-//   box-sizing: border-box;
-//   text-align: center;
-// }
+.main {
+  font-size: 16px;
+  font-family: work sans, helvetica, "Lisong Pro", "PMingLiU", "PingFang TC",
+  "Microsoft JhengHei", "微軟正黑體", STXihei, sans-serif;
+  .title-wrap {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 72px 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-image: url(@/asset/images/home/photo-top.jpg);
+    .title-content {
+      min-height: 176px;
+      color: #fff;
+    }
+    a {
+      color: #fff;
+    }
+  }
+
+  .swiper-img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .time-list {
+    font-family: montserrat, PingFang TC, Microsoft JhengHei, 微軟正黑體, STXihei,
+    sans-serif;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #50555c;
+    margin-bottom: 72px;
+    width: 800px;
+    .s-text-color-custom2 {
+      display: inline-block;
+      padding-top: 12px;
+      line-height: 32px;
+      font-size: 18px;
+    }
+
+    a {
+      color: #2aabd9
+    }
+
+    h6 {
+      font-size: 18px;
+      color: #ef7f4f;
+    }
+
+    .logo-wrap-sm {
+      position: relative;
+      // flex: 1;
+      width: 36%;
+      max-width: 720px;
+      max-height: 517px;
+
+      img {
+        // max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: auto;
+        // vertical-align: middle;
+        // object-fit: contain;
+
+        // display: block;
+        // max-height: 200px;
+        // margin: 0 auto;
+      }
+    }
+
+    .detail {
+      // flex-shrink: 1;
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      text-align: left;
+      p {
+        line-height: 24px;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #1D2023;
+    font-family: work sans, helvetica, "Lisong Pro", "PMingLiU", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", STXihei, sans-serif;
+  }
+
+  .recruit-students {
+    color: #1D2023;
+    text-align: center;
+    padding-bottom: 32px;
+
+    .s-text-color-custom2 {
+      line-height: 32px;
+      font-size: 18px;
+    }
+    // h2 {
+    //   margin-bottom: 20px;
+    //   font-weight: 400;
+    //   color: #1D2023;
+    //   font-family: work sans, helvetica, "Lisong Pro", "PMingLiU", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", STXihei, sans-serif;
+    // }
+    h2 {
+      margin-bottom: 20px;
+    }
+    h4 {
+      color: #ef7f4f;
+    }
+  }
+
+  .message-panel {
+    padding: 0 12%;
+    margin-bottom: 75px;
+
+    // text-align: center;
+
+    a {
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    // h2 {
+    //   margin-bottom: 40px;
+    // }
+
+    .detail-info {
+      text-align: left;
+      font-size: 15px;
+      color: #50555c;
+      padding-bottom: 28px;
+    }
+
+    .time-info {
+      font-size: 18px;
+      color: rgb(204, 204, 204);
+      padding: 4px 0 8px;
+    }
+    .more-article {
+      text-align: center;
+    }
+    .more-article-btn {
+      padding: 10px 20px;
+      background-color: rgb(204, 204, 204);
+    }
+  }
+  .contact-us {
+    text-align: center;
+  }
+  .contact-link {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 12%;
+    .link-wrap {
+      margin: 0 20px;
+      flex: 1;
+      position: relative;
+      max-width: 160px;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .link-name {
+      padding: 16px 0;
+    }
+  }
+
+  // .el-carousel__item h3 {
+  //   color: #475669;
+  //   opacity: 0.75;
+  //   line-height: 300px;
+  //   margin: 0;
+  //   text-align: center;
+  // }
+
+  // .el-carousel__item:nth-child(2n) {
+  //   background-color: #99a9bf;
+  // }
+
+  // .el-carousel__item:nth-child(2n + 1) {
+  //   background-color: #d3dce6;
+  // }
+}

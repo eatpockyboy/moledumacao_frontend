@@ -61,31 +61,6 @@
     max-width: calc(100vw - 130px);
   }
 }
-.main {
-  font-size: 16px;
-  font-family: work sans, helvetica, "Lisong Pro", "PMingLiU", "PingFang TC",
-    "Microsoft JhengHei", "微軟正黑體", STXihei, sans-serif;
-  .title-wrap {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 72px 24px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
-    background-position: 50% 50%;
-    background-image: url(@/asset/images/home/photo-top.jpg);
-    .title-content {
-      min-height: 176px;
-      color: #fff;
-    }
-    a {
-      color: #fff;
-    }
-  }
-}
 .swiper-img {
   object-fit: cover;
   width: 100%;

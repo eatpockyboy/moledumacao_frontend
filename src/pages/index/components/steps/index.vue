@@ -23,23 +23,23 @@
 import StepNum from "./stepNum.vue";
 const list = [
   {
-    text: 'Gavin Sir X Calvin Sir- 會計、數學、物理、',
+    text: '會計、數學、物理',
     time: 'MON: 19:00~22:00'
   },
   {
-    text: 'Edy Sir X Gavin Sir -化學、數學、微積分 ',
+    text: '化學、數學、微積分',
     time: 'TUE: 1900~22:00'
   },
   {
-    text: 'Gavin Sir X Calvin Sir- 會計、數學、物理、',
+    text: '物理、數學、英文',
     time: 'WED: 1900~22:00'
   },
   {
-    text: 'Gavin Sir X Calvin Sir- 會計、數學、物理、',
+    text: '微積分、數學、物理',
     time: 'THU: 1900~22:00'
   },
   {
-    text: 'Gavin Sir X Calvin Sir- 會計、數學、物理、',
+    text: '化學、數學、會計',
     time: 'FRI: 1900~22:00'
   },
 ]
@@ -68,7 +68,7 @@ const list = [
   }
 }
 .progress-list {
-  width: 50%;
+  width: 300px;
   margin: 0 auto;
   color: #50555c;
   .progress-item {
