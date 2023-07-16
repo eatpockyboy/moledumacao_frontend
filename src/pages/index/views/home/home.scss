@@ -36,17 +36,10 @@
   .contact {
     display: flex;
     flex-direction: row-reverse;
-    margin: 0 auto;
+    padding: 0 12%;
     font-size: 15px;
     color: #50555c;
     margin-bottom: 72px;
-    width: 800px;
-    .s-text-color-custom2 {
-      display: inline-block;
-      padding-top: 12px;
-      line-height: 32px;
-      font-size: 18px;
-    }
 
     a {
       color: #2aabd9
@@ -103,6 +96,7 @@
   }
 
   .recruit-students {
+    padding: 0 12%;
     color: #1D2023;
     text-align: center;
     padding-bottom: 32px;
@@ -129,7 +123,9 @@
     padding: 0 12%;
     margin-bottom: 75px;
 
-    // text-align: center;
+    .h2 {
+      text-align: center;
+    }
 
     a {
       font-size: 18px;
@@ -201,4 +197,14 @@
   // .el-carousel__item:nth-child(2n + 1) {
   //   background-color: #d3dce6;
   // }
+}
+@media screen and (max-width: 727px) {
+  .main {
+    .contact {
+      flex-direction: column;
+      .logo-wrap-sm {
+        width: auto;
+      }
+     }
+  }
 }
