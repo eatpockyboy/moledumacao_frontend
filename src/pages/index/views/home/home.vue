@@ -82,7 +82,7 @@
       <div class="detail">
         <div class="s-component-content s-font-heading" style="white-space: pre-wrap">
           <h3>
-            <p style="font-size: 130%">
+            <p class="s-font-subtitle">
               <strong>澳門摩爾教學-澳門數理化補習專家-水坑尾補習社</strong>
             </p>
           </h3>
